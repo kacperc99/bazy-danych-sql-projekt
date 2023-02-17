@@ -1,0 +1,9 @@
+LOAD DATA
+CHARACTERSET UTF8
+INFILE 'grupa.csv'
+BADFILE 'grupa.bad.txt'
+DISCARDFILE 'grupa.dsc.txt'
+REPLACE INTO TABLE grupkka
+FIELDS TERMINATED BY ","
+TRAILING NULLCOLS
+(grupa_ID,nazwa_grupy)

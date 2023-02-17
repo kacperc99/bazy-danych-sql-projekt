@@ -1,0 +1,10 @@
+LOAD DATA
+CHARACTERSET UTF8
+INFILE 'sala.csv'
+BADFILE 'sala.bad.txt'
+DISCARDFILE 'sala.dsc.txt'
+REPLACE INTO TABLE sala
+FIELDS TERMINATED BY ","
+TRAILING NULLCOLS
+(sala_ID,numer_sali)
+
